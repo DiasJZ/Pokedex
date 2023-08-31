@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import React from 'react'
 
-function Header () {
-    const [count, setCount] = useState(0)
 
+function Header () {
     return (
         <>
-            <h1 className='text-center text-white'>Pokédex</h1>
+            <h1 className='text-center text-white bg-red-600'>
+                Pokédex
+            </h1>
         </>
     )
 }
