@@ -14,3 +14,36 @@ body {
     background-image: linear-gradient(to bottom, #6ab7f5, #fff);
     min-height: 100vh;
 }
+
+input {
+    background-color: rgb(198, 188, 188);
+    font-weight: 600;
+    margin-left: 44%;
+    padding-top: -50px;
+    font-size: clamp(8px, 5vw, 1rem);
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    display: flex;
+    gap: 20px;
+}
+
+.button {
+    width: 100px;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
