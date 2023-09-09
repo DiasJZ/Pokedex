@@ -5,7 +5,7 @@ import React from 'react'
 function Header () {
     return (
         <>
-            <h1 className='text-center text-white bg-red-600'>
+            <h1 id='logo'>
                 Pokédex
             </h1>
         </>

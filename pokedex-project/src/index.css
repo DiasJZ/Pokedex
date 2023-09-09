@@ -1,3 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+#logo {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: yellow;
+    text-shadow: 2px 0 #2697e2, -2px 0 #2697e2, 0 2px #2697e2, 0 -2px #2697e2,
+               1px 2px #2697e2, -1px -1px #2697e2, 1px -1px #2697e2, -1px 1px #2697e2;
+    text-align: center;
+    padding: 10px;
+    background-size: contain;
+    margin-top: -5px;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
