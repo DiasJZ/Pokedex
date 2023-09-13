@@ -14,7 +14,7 @@ function Header () {
     }, [])
         const getPokemons = () => { 
         var endpoints = []
-        for (var i = 1; i++; i<50 ) {
+        for (var i = 1; i<50; i++) {
             endpoints.push(`https://pokeapi.com/api/v2/pokemon/${i}/`)
         }
 
