@@ -14,7 +14,10 @@ function Header () {
     }, [])
         const getPokemons = () => { 
         var endpoints = []
-        for (var i = 1; i++; i<50 )
+        for (var i = 1; i++; i<50 ) {
+            endpoints.push(`https://pokeapi.com/api/v2/pokemon/${i}/`)
+        }
+
     axios.get("https://pokeapi.co/api/v2/pokemon?limit=50")
     .then((res) => setPokemons(res.data.results))
     .catch((err) => console.log(err));
