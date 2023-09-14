@@ -14,13 +14,15 @@ function Header () {
     }, [])
         const getPokemons = () => { 
         var endpoints = []
-        for (var i = 1; i<50; i++) {
+        for (var i = 1; i<151; i++) {
             endpoints.push(`https://pokeapi.com/api/v2/pokemon/${i}/`)
         }
-        
         var response = axios.all(endpoints.map((endpoint) => axios.get(endpoint))).then((res) => setPokemons(res));
         return response;
 
+    axios.get("https://pokeapi.co/api/v2/pokemon?limit=151")
+    .then((res) => setPokemons(res.data.results))
+    .catch((err) => console.log(err));
     };
     return (
     
@@ -35,7 +37,7 @@ function Header () {
                 <Grid container>
                     {pokemons.map((pokemon, key) => (
                         <Grid item xs={3} key={key}>
-                        <Pokecard name={pokemon.data.name} />
+                        <Pokecard name={pokemon.name} />
                     </Grid>
                     ))}
                     <Grid item xs={3}>
